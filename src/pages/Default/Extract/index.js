@@ -193,7 +193,7 @@ export default function Dashboard({ match }) {
                     >
                       {item.to
                         ? `${item.to.user?.name} - ${item.to.conta.numeroConta}`
-                        : ``}
+                        : item.bill || ""}
                     </td>
                   </tr>
                 ))}

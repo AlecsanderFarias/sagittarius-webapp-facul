@@ -11,6 +11,7 @@ export default async (data, hasDestiny) => {
       .min(1, "O valor minimo é 1")
       .required("O valor é obrigatório"),
     reason: Yup.string(),
+    bill: Yup.string(),
   });
 
   await schema.validate(data, { abortEarly: false });
