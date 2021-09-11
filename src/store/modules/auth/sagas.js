@@ -25,7 +25,7 @@ export function* signIn({ payload }) {
     if (error.response && error.response.data && error.response.data.error) {
       toast.error(error.response.data.error);
     } else {
-      toast.error("Se produjo un error, inténtelo de nuevo más tarde.");
+      toast.error("Ocorreu algum erro, tente novamente mais tarde.");
     }
 
     yield put(signFailure());
@@ -47,7 +47,7 @@ export function* signUp({ payload }) {
     if (error.response && error.response.data && error.response.data.error) {
       toast.error(error.response.data.error);
     } else {
-      toast.error("Se produjo un error, inténtelo de nuevo más tarde.");
+      toast.error("Ocorreu algum erro, tente novamente mais tarde.");
     }
 
     yield put(signFailure());
